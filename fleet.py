@@ -64,6 +64,9 @@ def update_graphs(scooter_id):
 
     return fig_soh, fig_temp, fig_usage
 
+# Expose server for Gunicorn
+server = app.server
+
 # Run server
 if __name__ == '__main__':
     app.run(debug=True)
